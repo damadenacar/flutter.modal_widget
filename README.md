@@ -4,7 +4,7 @@ Showing interactivity is important for apps, even while executing blocking tasks
 
 Although it is easy to show build and show the overlay depending on the state of a _StatefulWidget_, it is easier not to have to build it ;)
 
-This package provides a mixin that eases the task of overlaying an arbitrary widget over an other widget, to show activity during the execution of long tasks.
+This package provides a mixin that eases the task of overlaying an arbitrary widget over another widget, to show activity during the execution of long tasks.
 
 ## Features
 
