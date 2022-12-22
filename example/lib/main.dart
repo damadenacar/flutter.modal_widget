@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:overlay_widget/overlay_widget.dart';
+import 'package:modal_widget/modal_widget.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 void main() {
@@ -12,26 +12,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: OverlayWidgetDemo(),
+      home: ModalWidgetDemo(),
     );
   }
 }
 
-class OverlayWidgetDemo extends StatefulWidget {
-  const OverlayWidgetDemo({super.key});
+class ModalWidgetDemo extends StatefulWidget {
+  const ModalWidgetDemo({super.key});
 
   @override
-  State<OverlayWidgetDemo> createState() => _OverlayWidgetDemoState();
+  State<ModalWidgetDemo> createState() => _ModalWidgetDemoState();
 }
 
-class _OverlayWidgetDemoState extends State<OverlayWidgetDemo> with OverlayWidget{
+class _ModalWidgetDemoState extends State<ModalWidgetDemo> with ModalWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: null,
-      body: buildWithOverlayWidget(child: Center(
+      body: buildWithModalWidget(child: Center(
         child: ElevatedButton(
-                onPressed: () => showOverlayWidgetWhile(
+                onPressed: () => showModalWidgetWhile(
                   () async => await Future.delayed(
                     const Duration(seconds: 3)
                   )
@@ -39,7 +39,7 @@ class _OverlayWidgetDemoState extends State<OverlayWidgetDemo> with OverlayWidge
                 child: const Text("show overlay")
               ),
         ),
-        overlayWidget: const Center(child: Text("processing", style: TextStyle(fontSize: 50),))
+        modalWidget: const Center(child: Text("processing", style: TextStyle(fontSize: 50),))
       ),
     );
   }
