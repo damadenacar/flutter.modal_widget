@@ -19,3 +19,16 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+
+**/android/
+**/ios/
+**/linux/
+**/macos/
+**/web/
+**/windows/
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.vscode/
