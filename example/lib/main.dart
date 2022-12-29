@@ -24,23 +24,23 @@ class ModalWidgetDemo extends StatefulWidget {
   State<ModalWidgetDemo> createState() => _ModalWidgetDemoState();
 }
 
-class _ModalWidgetDemoState extends State<ModalWidgetDemo> with ModalWidget{
+class _ModalWidgetDemoState extends State<ModalWidgetDemo> with ModalWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: null,
-      body: buildWithModalWidget(child: Center(
-        child: ElevatedButton(
-                onPressed: () => showModalWidgetWhile(
-                  () async => await Future.delayed(
-                    const Duration(seconds: 3)
-                  )
-                ),
-                child: const Text("show overlay")
-              ),
-        ),
-        modalWidget: const Center(child: Text("processing", style: TextStyle(fontSize: 50),))
-      ),
+      body: buildWithModalWidget(
+          child: Center(
+            child: ElevatedButton(
+                onPressed: () => showModalWidgetWhile(() async =>
+                    await Future.delayed(const Duration(seconds: 3))),
+                child: const Text("show overlay")),
+          ),
+          modalWidget: const Center(
+              child: Text(
+            "processing",
+            style: TextStyle(fontSize: 50),
+          ))),
     );
   }
 }

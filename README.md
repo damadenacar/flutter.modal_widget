@@ -16,8 +16,8 @@ The basic features of this mixing, where used in a widget are:
 
 The effect is the one in the images:
 
-![Overlay widget](img/overlay_widget_text.gif)
-![Overlay widget](img/overlay_widget_spinkit.gif)
+![Overlay widget](https://github.com/damadenacar/flutter.modal_widget/img/overlay_widget_text.gif)
+![Overlay widget](https://github.com/damadenacar/flutter.modal_widget/img/overlay_widget_spinkit.gif)
 
 ## Getting started
 
