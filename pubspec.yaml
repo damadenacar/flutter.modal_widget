@@ -1,6 +1,6 @@
 name: modal_widget
 description: A package that overlays an arbitrary widget over others, during the execution of long tasks, to improve interactity (e.g. showing a spinner).
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/damadenacar/flutter.modal_widget
 
 environment:
